@@ -1,0 +1,80 @@
+@import "mixins/_start";
+
+$headerFF: 'ZCOOL KuaiLe', cursive;
+$mainFF: 'Inconsolata', monospace;
+$tac: center;
+
+
+
+
+ul, li {
+  display: block;
+  padding: 0;
+  margin: 0; }
+
+
+body, div, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0; }
+
+section {
+  padding: 48px 0 67px; }
+h1 {
+	margin-left: map-get($tactics,"one_again");
+	color: map-get($tactics, "clear");
+}
+
+
+p{
+	font-size: 30px;
+	@include pi();
+}
+
+h2 {
+	color: $hopbush;
+	font-family: $mainFF;
+	text-align: $tac;
+}
+
+h5 {
+@extend %headingOne;
+}
+.navigation {
+margin-left: -70px;
+display: flex;
+align-items: center;
+background: #2AA1DD;
+height: 100px;
+ li {
+	margin-left: 250px;
+	list-style-type: none;
+	font-size: $size-22;
+	font-family: $headerFF;
+	color: blue;
+
+	&:hover{
+		color: $hopbush;
+		align-items: center;
+	}
+}
+}
+
+.he {
+	background: $hopbush;
+
+	&__border{
+		color: yellow;
+		&_color{
+			color: #A5F063;
+		}
+	}
+}
+.navi {
+  @extend .navigation;
+  margin-left: 100px;
+
+  & li:hover{
+  	color: #A5F063;
+  }
+}
+

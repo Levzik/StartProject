@@ -1,0 +1,32 @@
+
+// color: $hopbush;
+
+$hopbush: #c69;
+$size-22: 22px;
+
+
+// map-get($tactics,"one_again")
+
+$tactics: (
+'hopbush': #ff2,
+'clear': #236,
+'one_again': 50px
+);
+
+
+// @extend %headingOne;
+
+%headingOne{ font-size: 30px; color: #F0EFB8;}
+
+
+// @include pi();
+
+@mixin pi(){
+	font-family: $mainFF;
+	font-weight: bold;
+	color: red;
+}
+
+
+
+// &__ ,   @extend .navigation(Вставление другого класса) ,
