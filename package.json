@@ -9,7 +9,7 @@
   "author": "",
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-htmlmin": "^5.0.1",
     "gulp-sass": "latest",
     "jquery": "^3.3.1"
